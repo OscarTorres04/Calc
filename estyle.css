@@ -9,28 +9,6 @@ body {
     padding: 0;
 }
 
-header {
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
-}
-
-.main-container {
-    display: flex;
-    flex-direction: column; /* Cambiado a columna por defecto para móviles */
-    align-items: center; /* Centra el contenido horizontalmente */
-}
-
-.content-container {
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    margin: 20px;
-    width: 90%; /* Ajusta el ancho para móviles */
-    max-width: 500px; /* Ancho máximo para dispositivos más grandes */
-}
-
 .ad-space {
     background-color: #f9f9f9;
     border: 1px dashed #ccc;
@@ -39,22 +17,57 @@ header {
     font-size: 14px;
     color: #999;
     width: 100%; /* Ancho completo para anuncios */
+    margin: 10px; /* Margen entre anuncios y contenido */
 }
 
 .top-ad {
     margin-bottom: 20px;
 }
 
-.side-ad {
-    width: 100%; /* Ancho completo para anuncios laterales */
-    margin: 20px 0; /* Espaciado vertical */
+.main-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan */
+    justify-content: center; /* Centra los elementos en el contenedor */
+    margin: 20px;
 }
 
-footer {
-    text-align: center;
-    padding: 10px 0;
-    background-color: #333;
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    flex: 1; /* Ocupa el espacio restante */
+    min-width: 300px; /* Ancho mínimo para que no se reduzca demasiado */
+    max-width: 500px; /* Ancho máximo para dispositivos más grandes */
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+input[type="number"] {
+    width: 100%; /* Ancho completo de los inputs */
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #4CAF50; /* Color verde */
     color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049; /* Color verde más oscuro al pasar el mouse */
+}
+
+h2 {
+    margin-top: 20px;
 }
 
 /* Media Queries para Responsividad */
@@ -62,14 +75,9 @@ footer {
     .main-container {
         flex-direction: row; /* Cambia a fila en pantallas más grandes */
     }
-    
-    .content-container {
-        flex: 1; /* Ocupa el espacio restante */
-        margin: 20px; /* Mantiene el margen */
-    }
 
-    .left-ad, .right-ad {
+    .side-ad {
         width: 120px; /* Ancho fijo para anuncios laterales */
-        margin: 20px; /* Margen entre el contenido y los anuncios */
+        margin: 0 20px; /* Espaciado lateral */
     }
 }

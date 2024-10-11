@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Presupuesto Personal</title>
+    <link rel="stylesheet" href="estyle.css">
+</head>
+<body>
+    <!-- Anuncio Lateral Izquierdo -->
+    <div class="ad-space side-ad left-ad">
+        <p>Anuncio</p>
+    </div>
+
+    <div class="main-container">
+        <!-- Contenido Principal de la Calculadora -->
+        <div class="container">
+            <h1>Calculadora de Presupuesto Personal</h1>
+            
+            <!-- Espacio para Anuncio Superior -->
+            <div class="ad-space">
+                <p>Anuncio</p>
+            </div>
+            
+            <!-- Formulario de Ingreso de Datos -->
+            <div class="form-group">
+                <label for="salary">Salario Mensual:</label>
+                <input type="number" id="salary" placeholder="Ingrese su salario">
+            </div>
+            <div class="form-group">
+                <label for="rent">Renta:</label>
+                <input type="number" id="rent" placeholder="Ingrese su renta">
+            </div>
+            <div class="form-group">
+                <label for="utilities">Servicios:</label>
+                <input type="number" id="utilities" placeholder="Ingrese sus servicios">
+            </div>
+            <div class="form-group">
+                <label for="food">Comida:</label>
+                <input type="number" id="food" placeholder="Ingrese sus gastos de comida">
+            </div>
+            <div class="form-group">
+                <label for="others">Otros Gastos:</label>
+                <input type="number" id="others" placeholder="Ingrese otros gastos">
+            </div>
+            
+            <button id="calculateBtn">Calcular Presupuesto</button>
+            
+            <!-- Espacio para Anuncio Inferior -->
+            <div class="ad-space">
+                <p>Anuncio</p>
+            </div>
+            
+            <h2 id="result">Presupuesto mensual: </h2>
+        </div>
+    </div>
+
+    <!-- Anuncio Lateral Derecho -->
+    <div class="ad-space side-ad right-ad">
+        <p>Anuncio</p>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

@@ -3,63 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora de Presupuesto Personal</title>
+    <title>Calculadora de IMC</title>
     <link rel="stylesheet" href="estyle.css">
-    <meta name="google-adsense-account" content="ca-pub-8558906585182552">
+     <meta name="google-adsense-account" content="ca-pub-8558906585182552">
 </head>
 <body>
-    <!-- Anuncio Lateral Izquierdo -->
-    <div class="ad-space side-ad left-ad">
-        <p>Anuncio</p>
+    <!-- Anuncio Superior -->
+    <div class="ad-space top-ad">
+        <p>Anuncio Superior</p>
     </div>
 
+    <header>
+        <h1>Calculadora de IMC</h1>
+    </header>
+
     <div class="main-container">
-        <!-- Contenido Principal de la Calculadora -->
-        <div class="container">
-            <h1>Calculadora de Presupuesto Personal</h1>
-            
-            <!-- Espacio para Anuncio Superior -->
-            <div class="ad-space">
-                <p>Anuncio</p>
-            </div>
-            
-            <!-- Formulario de Ingreso de Datos -->
-            <div class="form-group">
-                <label for="salary">Salario Mensual:</label>
-                <input type="number" id="salary" placeholder="Ingrese su salario">
-            </div>
-            <div class="form-group">
-                <label for="rent">Renta:</label>
-                <input type="number" id="rent" placeholder="Ingrese su renta">
-            </div>
-            <div class="form-group">
-                <label for="utilities">Servicios:</label>
-                <input type="number" id="utilities" placeholder="Ingrese sus servicios">
-            </div>
-            <div class="form-group">
-                <label for="food">Comida:</label>
-                <input type="number" id="food" placeholder="Ingrese sus gastos de comida">
-            </div>
-            <div class="form-group">
-                <label for="others">Otros Gastos:</label>
-                <input type="number" id="others" placeholder="Ingrese otros gastos">
-            </div>
-            
-            <button id="calculateBtn">Calcular Presupuesto</button>
-            
-            <!-- Espacio para Anuncio Inferior -->
-            <div class="ad-space">
-                <p>Anuncio</p>
-            </div>
-            
-            <h2 id="result">Presupuesto mensual: </h2>
+        <!-- Anuncio Lateral Izquierdo -->
+        <div class="ad-space side-ad left-ad">
+            <p>Anuncio Lateral Izquierdo</p>
+        </div>
+
+        <div class="content-container">
+            <form id="bmiForm">
+                <label for="weight">Peso (kg):</label>
+                <input type="number" id="weight" required>
+
+                <label for="height">Altura (m):</label>
+                <input type="number" id="height" step="0.01" required>
+
+                <button type="submit">Calcular IMC</button>
+            </form>
+            <div id="result"></div>
+        </div>
+
+        <!-- Anuncio Lateral Derecho -->
+        <div class="ad-space side-ad right-ad">
+            <p>Anuncio Lateral Derecho</p>
         </div>
     </div>
 
-    <!-- Anuncio Lateral Derecho -->
-    <div class="ad-space side-ad right-ad">
-        <p>Anuncio</p>
-    </div>
+    <footer>
+        <p>© 2024 Calculadora de IMC | <a href="#contact">Contacto</a></p>
+    </footer>
 
     <script src="main.js"></script>
 </body>
